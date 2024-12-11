@@ -15,7 +15,6 @@ public class Main {
     public static double division(double a, double b) {
         if (b == 0) {
             System.out.println("Erreur : veillez réssayer !");
-            return 0;
         }
         return a / b;
     }
@@ -48,12 +47,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int choix;
         do {
-            System.out.print("Entrez le premier nombre : ");
-            double a = scanner.nextDouble();
-
-            System.out.print("Entrez le deuxième nombre : ");
-            double b = scanner.nextDouble();
-
+            double a = 0;
+            double b = 0;
             System.out.println("Choisissez une opération :");
             System.out.println("1. Addition ");
             System.out.println("2. Soustraction ");
@@ -64,6 +59,15 @@ public class Main {
             System.out.println("7. Factorielle ");
             System.out.print("veillez choisis une operation : ");
             choix = scanner.nextInt();
+            if (choix != 6) {
+                System.out.print("Entrez le premier nombre : ");
+                a = scanner.nextDouble();
+                System.out.print("Entrez le deuxième nombre : ");
+                b = scanner.nextDouble();
+            } else {
+                System.out.print("Entrez le nombre pour la racine carrée : ");
+                a = scanner.nextDouble();
+            }
 
             switch (choix) {
 
