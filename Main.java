@@ -59,13 +59,13 @@ public class Main {
             System.out.println("7. Factorielle ");
             System.out.print("veillez choisis une operation : ");
             choix = scanner.nextInt();
-            if (choix != 6) {
+            if (choix != 6 && choix != 7) {
                 System.out.print("Entrez le premier nombre : ");
                 a = scanner.nextDouble();
                 System.out.print("Entrez le deuxième nombre : ");
                 b = scanner.nextDouble();
             } else {
-                System.out.print("Entrez le nombre pour la racine carrée : ");
+                System.out.print("Entrez le nombre un nombre : ");
                 a = scanner.nextDouble();
             }
 
